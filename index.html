@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-color: #d9f9d9; 
+        }
+
+        .container {
+            margin: 50px auto;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #ffffff; 
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+
+        .container h1 {
+            color: #333333; 
+        }
+
+        .container label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            color: #555555; 
+        }
+
+        .container input[type="text"],
+        .container input[type="password"],
+        .container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .container input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .container input[type="submit"] {
+            background-color: #00bfff; 
+            border: none;
+            color: #ffffff; 
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out; 
+        }
+
+        .container input[type="submit"]:hover {
+            background-color: #0080ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form method="post" action="/">
+            <h1>Student Registration Form</h1>
+            <hr>
+            <br>
+            <label for="name">Name :</label>
+            <input type="text" id="name" placeholder="Name" name="name" required>
+            <br>
+            <br>
+            <label for="email">Email :</label>
+            <input type="text" id="email" placeholder="Email" name="email" required>
+            <br>
+            <br>
+            <label for="age">Age :</label>
+            <input type="text" id="age" placeholder="Age" name="age" required>
+            <br>
+            <br>
+            <label>Gender :</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <br>
+            <br>
+            <label for="address">Address :</label>
+            <input type="text" id="address" placeholder="Address" name="address" required>
+            <br>
+            <br>
+            <label for="password">Password :</label>
+            <input type="password" id="password" placeholder="Password" name="password" required>
+            <br>
+            <br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

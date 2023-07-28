@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student details</title>
+</head>
+<body>
+    <% if(details.length>0) { %>
+        <% for(var i=0; i<details.length;i++) { %>
+            <h3>NAME- <%- details[i].name %></h3>
+            <h3>EMAIL- <%- details[i].email %></h3>
+            <h3>AGE- <%- details[i].age %></h3>
+            <h3>GENDER- <%- details[i].gender %></h3>
+            <h3>ADDRESS- <%- details[i].address %></h3>
+            <h3>PASSWORD- <%- details[i].password %></h3>
+            <hr>
+        <% } %>
+    <% }else{ %>
+        <h3>Student data not found</h3>
+    <% } %>
+</body>
+</html>
